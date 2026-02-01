@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    height: 40px;
+    width: 20rem;
+    font-weight: bold;
+}
+
+#modeBtn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+#list{
+    color: greenyellow;
+}

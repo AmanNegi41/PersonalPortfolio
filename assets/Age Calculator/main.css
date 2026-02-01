@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: auto;
+    width: auto;
+    border: 2px solid greenyellow;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+}
+
+#btn{
+    background-color: aqua;
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#btn:hover{
+    background-color: yellowgreen;
+    opacity: 60%;
+}
+
+
+#result{
+    background-color: aliceblue;
+    color: darkmagenta;
+}
