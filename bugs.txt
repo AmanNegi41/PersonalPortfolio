@@ -1,0 +1,7 @@
+# Paste your broken code between the MARKERS below and add one-line bug description after BUG_DESCRIPTION:
+# ---START PASTE---
+...existing code...
+# ---END PASTE---
+
+BUG_DESCRIPTION:
+# e.g. "Function foo() returns wrong sum for negative inputs"

@@ -1,141 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.lordicon.com/lordicon.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Aman Negi - Full-stack developer specializing in ASP.NET, C#, SQL, and modern web technologies.">
+  <meta name="theme-color" content="#00796b">
+  <title>Aman Negi | Full-Stack Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div  class="container-fluid nav-icons">
-            <!-- <a class="navbar-brand home" href="#home">Home</a> -->
-            <!-- <a href="https://lordicon.com/wired-outline-63-home-hover-3d-roll.svg"></a> -->
-        
-            
-            <a class="navbar-brand" href="#about">Home</a>
-            <a class="navbar-brand" href="#about">About</a>
-            <a class="navbar-brand" href="#skills">Skills</a>
-            <a class="navbar-brand" href="#project">Projects</a>
-            <a class="navbar-brand" href="#contact">Contact Me</a>
-        </div>
-    </nav>
-    <div class="digiTime text-center">
-        <p id="time" ></p>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Aman Negi</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Building modern web apps with ASP.NET, C#, and SQL</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <!-- About -->
+<section id="about" class="section about">
+  <h2>About Me</h2>
+  <p>
+    I’m a developer passionate about creating responsive, efficient, and user‑friendly web applications. 
+    With experience in ASP.NET, C#, and SQL, I enjoy solving logic‑heavy challenges and building practical solutions. 
+    I focus on writing clean code, designing smooth workflows, and continuously learning to improve my craft. 
+    My goal is to deliver applications that are not only functional but also meaningful for the people who use them.
+  </p>
+</section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-badge">C#</div>
+      <div class="skill-badge">ASP.NET</div>
+      <div class="skill-badge">SQL</div>
+      <div class="skill-badge">JavaScript</div>
+      <div class="skill-badge">HTML5</div>
+      <div class="skill-badge">CSS3</div>
     </div>
+  </section>
 
-</lord-icon>
-        <!-- <hr> -->
-<div class="text-center fronter ">    
-    <h1>Aman Negi</h1>
-    <h2>Aspiring Web Developer | Digital Creator</h2>
-</div>
-    <main class="main">
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <img src="images/age.png" alt="Student Image Manager - Student management web application" loading="lazy">
+        <h3>Student Image Manager</h3>
+        <p>A web app for managing student images with login/signup functionality.</p>
+        <a href="#assets/Age Calculator/index.html" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <img src="images/calc.png" alt="SQL Challenge Toolkit - Interactive SQL practice platform" loading="lazy">
+        <h3>SQL Challenge Toolkit</h3>
+        <p>Interactive SQL practice platform inspired by HackerRank challenges.</p>
+        <a href="#assets/Calculator App/index.html" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <img src="images/crud.png" alt="Portfolio Website - Responsive showcase of skills and projects" loading="lazy">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio showcasing skills, projects, and achievements.</p>
+        <a href="#assets/CRUD OPERATION/index.html" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <img src="images/green.jpg" alt="Green Project - Eco-friendly web application design" loading="lazy">
+        <h3>Green Project</h3>
+        <p>Eco-friendly web app design.</p>
+        <a href="#assets/Digital Clock/index.html" class="btn">View Project</a>
+      </div>
+      <div class="card">~
 
-        <hr>
+        <img src="images/snake.png" alt="Snake Game - Classic JavaScript game implementation" loading="lazy">
+        <h3>Snake Game</h3>
+        <p>Classic snake game built with JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <img src="images/todo.png" alt="Todo App - Task manager with CRUD operations" loading="lazy">
+        <h3>Todo App</h3>
+        <p>Simple task manager with CRUD functionality.</p>
+        <a href="#assets/To-Do List/index.html" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
 
-        <section id="about" class="about text-center">
-            <h2><u>ABOUT ME</u></h2>
-            <p>Hi there! I'm an Aspiring web developer with a solid foundation in HTML, CSS, and
-                JavaScript. Currently diving deeper into advanced HTML and exploring the wonders of JavaScript and C#.
-                My goal is to create interactive and engaging web experiences that are both visually appealing and
-                functionally robust.</p>
-            <p>As a dedicated learner, I'm committed to constantly improving my skills and staying updated with the
-                latest web development technologies. I love working on projects that challenge my creativity and
-                problem-solving abilities, and I'm especially passionate about developing meaningful and enjoyable
-                experiences for users.</p>
-            <p>In my journey to become a proficient web developer, I thrive on collaboration, learning from others, and
-                contributing to the web development community. Let's build something amazing together!</p>
-            </section>       
-        <section id="skills" class="skills">
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Let’s collaborate! Reach out via email.</p>
+    <a href="mailto:aman@example.com" class="btn">Email Me</a>
+    <a href="https://www.linkedin.com/in/aman-negi-7b2052250/" class="btn">LinkedIn</a>
+  </section>
 
-            <h2><u>SKILLS</u></h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>SQL</li>
-                <li>React</li>
-                <li>BootStrap</li>
-                <li>PowerBi</li>
-            </ul>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Aman Negi. All rights reserved.</p>
+  </footer>
 
-        </section>
-        <section id="qualification" class="qualifications">
-            <h2><u>QUALIFICATIONS</u></h2>
-
-            <p>I successfully completed my <cite>10th</cite> and <cite>12th</cite> grade education under the <cite>UK Board</cite>, where I developed a strong
-                foundation in various academic disciplines:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Standard</th>
-                            <th>Marks</th>
-                            <th>Percentage</th>
-                            <th>Board</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody> 
-                        <tr>
-                            <td>10th</td>
-                            <td>285</td>
-                            <td>57%</td>
-                            <td>UK Board</td>
-                        </tr>
-                        <tr>
-                            <td>12th</td>
-                            <td>342</td>
-                            <td>68.4%</td>
-                            <td>UK Board</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>Currently, I am in my 3rd year pursuing a Bachelor of Arts (BA). My academic journey has equipped me with
-                    essential skills and knowledge, and I am committed to furthering my education and professional
-                    development</p>
-
-        </section>
-
-        <hr>
-<h2><u>PROJECTS</u></h2>
-        <section id="project" class="projects">
-            <p><u>Some of the projects I've worked on:</u></p>
-            <a href="assets/Calculator-Project/index.html"><img height="200px" width="200px" src="images/calc.png" alt="calc-image"></a> <br>
-            <a href="assets/CRUD OPERATION/idx.html"><img src="images/crud.png" alt="crud-image"></a> <br>
-            <a href="assets/Age Calculator/index.html"><img src="images/age.png" alt="agecalc-image"></a> <br>
-            <a href="assets/Digital Clock/index.html"><img width="200px" height="200px" src="images/digitalc.png" alt="digiclock-image"></a> <br>
-            <a href="assets/To-Do List/index.html"><img src="images/todo.png" alt="tdlist-image"></a> <br>
-           
-        </section>
-    </main>
-
-    <hr>
-    <footer style="font-size: 25px;" class="footer">
-
-        <h2><u>CONTACT</u></h2>
-        <section id="contact" class="contacts">
-            <form action="action.php" target="_blank">
-                <input type="text" placeholder="enter your name...">
-                <input type="number" placeholder="enter your mob no...">
-                <textarea cols="100" rows="10" placeholder="Type your message here..."></textarea>
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-
-        <hr>
-
-        <a href="mailto:amannegii847@gmail.com"> Send Email</a>
-        <a href="amannegi/linked@in.com"> LinkedIn</a>
-    </footer>
-
-<script src="script.js"></script>
+  <!-- Burger Menu Script -->
+  <script src="script.js"></script>
 </body>
-
 </html>
