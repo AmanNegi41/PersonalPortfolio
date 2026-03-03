@@ -1,0 +1,64 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+}
+
+<!-- Loading Bar -->
+<div class="loading-bar" id="loadingBar"></div>
+
+<!-- Hero -->
+<header class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Building modern web apps with ASP.NET, C#, and SQL</p>
+    <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<!-- About -->
+<section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>I'm a developer passionate about creating responsive, efficient, and user-friendly web applications.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+        @foreach (Models.Skill skill in Model.Skills)
+        {
+            <div class="skill-badge">@skill.Name</div>
+        }
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="projectCarousel">
+            @foreach (var project in Model.Projects)
+            {
+                <div class="card">
+                    <img src="@project.ImagePath" alt="@project.Title - @project.Description" loading="lazy">
+                    <h3>@project.Title</h3>
+                    <p>@project.Description</p>
+                    <a href="@project.ProjectUrl" class="btn">View Project</a>
+                </div>
+            }
+        </div>
+        <div class="carousel-controls">
+
+            <button class="carousel-btn" id="prevBtn" title="Previous project">❮</button>
+            <button class="carousel-btn" id="nextBtn" title="Next project">❯</button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Let's collaborate! Reach out via email.</p>
+    <a href="mailto:aman@example.com" class="btn">Email Me</a>
+</section>
+
